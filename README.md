@@ -126,20 +126,7 @@ pip install tqdm~=4.65.0 pillow~=9.4.0
 
 ## 5. 代码使用说明  
 
-### 5.1 光谱数据转2D图像（第一阶段）  
-
-运行`spectrum_to_image.py`脚本，将1D反射光谱转换为2D图像（需确保光谱文件与数据集目录对应）：  
-
-
-```bash  
-python spectrum_to_image.py \  
-  --spectrum_dir ./road_crack_dataset \  # 光谱文件根目录  
-  --output_image_dir ./processed_2d_images \  # 2D图像输出目录  
-  --image_size 400  # 输出图像尺寸（与模型输入匹配）  
-```  
-
-
-### 5.2 模型训练（第二阶段）  
+### 5.1 模型训练
 
 运行`train_bcce.py`脚本，使用转换后的2D图像训练BCCE模型，示例命令：  
 
@@ -168,7 +155,7 @@ python train_bcce.py \
 | `--device`     | 训练设备（GPU需确保CUDA/CuDNN配置正常） | `GPU`                           |  
 
 
-### 5.3 模型预测  
+### 5.2 模型预测  
 
 使用训练好的`.h5`权重进行单张2D图像预测，运行`predict_bcce.py`脚本：  
 
