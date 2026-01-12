@@ -11,7 +11,7 @@ from dataset.data_loader import PeaDiseaseDataLoader
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='使用TSSC模型预测豌豆病害')
+    parser = argparse.ArgumentParser(description='使用模型预测道路裂缝情况')
     parser.add_argument('--image_path', type=str, required=True,
                         help='待预测图像路径')
     parser.add_argument('--weight_path', type=str, default='./weights/best_tssc.h5',
