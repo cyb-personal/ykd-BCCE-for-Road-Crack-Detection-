@@ -13,7 +13,7 @@ from dataset.data_loader import PeaDiseaseDataLoader
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='训练TSSC豌豆病害识别模型')
+    parser = argparse.ArgumentParser(description='训练道路裂缝识别模型')
     parser.add_argument('--data_dir', type=str, default='./pea_disease_dataset',
                         help='数据集根目录')
     parser.add_argument('--epochs', type=int, default=60,
