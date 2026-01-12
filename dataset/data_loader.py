@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 class PeaDiseaseDataLoader:
     def __init__(self, data_dir, img_size=(400, 400), batch_size=16):
         """
-        豌豆病害数据集加载器
+        道路裂缝数据集加载器
         :param data_dir: 数据集根目录
         :param img_size: 图像尺寸，默认(400, 400)
         :param batch_size: 批次大小
